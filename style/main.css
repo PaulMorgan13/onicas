@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 150px; 
+    background-color: white; 
+    margin-bottom: 10px;
+    
+}
+
+.nav { 
+    display: flex; 
+    justify-content: center;
+    font-size: 15px; 
+} 
+
+.nav li{
+    display: inline; 
+    padding: 0px 50px;
+    text-align: center; 
+    text-decoration: none; 
+    color: black;
+}   
+
+
+
+.nav a  { 
+  
+    text-decoration: none; 
+    color: black;
+}
+  
+.nav li:hover {
+    color: darkgrey;    
+
+}
+
+
+.book{
+    float:right;  
+    margin-left: 200px; 
+    background-color: palevioletred;
+    border-style: none ;
+    color: white; 
+    padding: 30px;  
+    transition-duration: 100ms;
+    -webkit-transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    width: 100px;
+   
+} 
+
+
+
+
+.book:hover { 
+    background-color: lightgray;
+    cursor: pointer;
+    width: 150px;
+} 
+
+  
+
+
+
+
+
+.first{
+    width: 100%;
+    height: 500px;
+    background-color: bisque;
+    margin-top: 10px; 
+    background-image: url(/images/promo/table3.jpg); 
+    background-size: 120%; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content:  center; 
+    padding:6% 10%; 
+}
+
+.head-logo{
+    margin-left: 40%;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/onica-party-planning.png); 
+    background-size: 80%;
+    background-repeat: no-repeat; 
+
+} 
+
+.first-card{
+    background-color :white;
+    width: 60%;
+    height: 250px;  
+    color: black; 
+    font-family: sans-serif;
+    padding: 10px 30px;  
+    
+} 
+
+.first-card h1{
+    font-size: 30px;    
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: lighter;
+
+}
+
+.card-line {
+  border: dashed 3px black ;
+  border-width: 2px; 
+  
+}
+
+.first-bottom{
+    width: 100%;
+    height: 100px; 
+    background-color: powderblue; 
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.s-icon{
+    margin: 0px 20px;
+} 
+
+.s-icon:hover{
+    opacity: 50%; 
+    cursor: pointer;
+}
+
+.second{
+    width: 100%;
+    height: 500px; 
+    background-color:white;  
+    display: flex; 
+    flex-direction: row;
+} 
+
+.balloons{ 
+    flex: 1;
+    margin: 100px 50px;
+    opacity: 50%;
+}  
+
+.second h1 { 
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 60px;
+    font-weight: lighter;
+}
+ .second p {
+        font-size: 30px; 
+ }
+
+
+#tag-line{
+        font-size: 70px;
+        color: palevioletred;
+} 
+
+.third{
+    width: 100%;
+    height: 500px; 
+    background-color: white; 
+    display: flex;
+    flex-direction: row; 
+    padding: 30px 50px;
+}  
+
+.third h1 {
+    flex: 1; 
+    font-size: 70px; 
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif; 
+
+}
+
+.third p{
+    font-size: 30px;
+}
+
+.wedding-icon{
+    opacity: 60%; 
+    flex: 1;
+}
+
+.fourth{
+    width: 100%;
+    height: 500px; 
+    background-color: white; 
+    padding: 50px 100px; 
+    display: flex;
+    justify-content:row;
+} 
+ 
+
+.fourth h1 {
+    flex: 1; 
+    font-size: 70px; 
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif; 
+
+}  
+
+.fourth p{
+    font-size: 40px;
+}
+
+.clock-icon{ 
+    flex: 1;
+    opacity: 70%;
+}
+
+footer{ 
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    height: 250px; 
+    padding: 50px 10px;
+}  
+
+
+hr { 
+        border-width: 5px;
+        color: cornflowerblue; 
+        border-style: dashed; 
+        border-color: white; 
+        
+}  
+
+.foot-img{
+    margin: 10px;
+}
+
+.footer-logo{  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+      
+} 
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(238, 139, 189, 0.336); 
+    width: 100%;
+    height: 100%; 
+    justify-content: center;
+} 
+
+.modal-form{
+    width: 60%;
+    height: 600px;
+    background-color: white;
+    margin-top: 5%;
+    animation-name: modalopn;
+    animation-duration: 400ms; 
+    padding: 15px;
+}  
+
+ @keyframes modalopn { 
+    from{opacity: 0;}
+    to{opacity: 1;}
+ }
+
+.close-btn{ 
+    font-size: 20px;
+    float: right;
+    margin: 10px;
+} 
+
+.close-btn:hover{
+    cursor: pointer; 
+    color: powderblue;
+}
+ 
+
+.m-form{ 
+
+    border: solid;
+    border-style: dashed; 
+    border-width: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    padding: 10px 60px; 
+} 
+ 
+
+.modal-form h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: lighter;
+    font-size: 25px; 
+    margin: 10px 0;
+}  
+
+.modal-form span {
+    color: palevioletred; 
+    font-size: 40px;
+}
+
+
+.m-form label {
+    padding: 10px; 
+    opacity:90%;
+}
+
+
+
+.m-form input , select {
+    margin: 10px; 
+    padding: 3px;
+    width: 200px;  
+}   
+
+
+
+.sub-btn{ 
+    background-color: powderblue;
+    width: 10px;
+    height: 45px;
+    padding: 30px 20px; 
+    border-style: dashed;  
+    border-color: palevioletred;
+    color: white;
+}
+
+
+.sub-btn:hover{
+    background-color: lightgray;
+    cursor: pointer;
+
+} 
+
+ 
+
+.burger{ 
+    font-size: 45px; 
+    color: palevioletred; 
+    cursor: pointer; 
+    display: none; 
+    transition: .2s ease;
+}  
+
+.burger:hover{
+    color: powderblue;
+}
+
+
+
+@media (max-width: 700px){ 
+            nav ul.show{ 
+                position: fixed;
+                width: 100%;
+                height:100vh; 
+                background-color: palevioletred; 
+                top:80px;
+                right: -100%;
+                text-align: center;
+                transition: all .3s; 
+                z-index: 1000;
+            }  
+            
+            nav li{  
+                display: flex; 
+                flex-direction: column;
+                line-height: 30px;  
+                font-size: 30px;
+                margin: 0 50px;
+                
+            } 
+
+            nav {
+                float: right;
+            } 
+
+            .burger{ 
+                margin-right: 3px;
+                display: block; 
+                position: static;
+            }
+
+            header{ 
+                height: 90px;
+            }
+
+            .head-logo{  
+                margin-left:10px;
+                margin-top: 5px;
+                width: 250px;
+                height: 250px; 
+                
+            }
+            
+            .first{
+                height: 300px;
+            }
+            
+            .first-card{ 
+                width: 400px;
+                padding: 10px;
+            }
+
+            .first-card p{
+                font-size: 12px;
+            }
+  
+
+            .first-bottom{
+                height: 70px;
+            }    
+
+
+
+        .second {
+
+            padding: 10px; 
+            height:300px ; 
+            margin-bottom: 10px;
+        
+        }
+        .second p ,ul{
+            font-size: 17px;
+             
+        }
+   
+
+
+
+        .third{ 
+            padding: 10px;
+            margin-top: 10px;
+            width: 300px;  
+        } 
+
+        .third p{
+            font-size: 17px;
+        }
+
+
+        .book{
+            display: none;
+        }
+    }
