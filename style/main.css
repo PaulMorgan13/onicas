@@ -48,12 +48,16 @@ header {
   -webkit-transition-duration: 100ms;
   transition-timing-function: ease-in-out;
   width: 100px;
+  font-weight: bold;
 }
 
 .book:hover {
-  background-color: lightgray;
+  background-color: powderblue;
   cursor: pointer;
   width: 150px;
+  z-index: 3;
+  text-decoration-style: dashed;
+  color: white;
 }
 
 .first {
@@ -67,13 +71,12 @@ header {
 }
 
 .head-logo {
-  margin-left: 40%;
-  width: 350px;
+  width: 60%;
   height: 100px;
 }
 
 .logo {
-  width: 100%;
+  float: right;
   height: 100%;
 }
 
@@ -121,22 +124,60 @@ header {
   background-color: white;
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+
+#down-btn {
+  position: absolute;
+  background: palevioletred;
+  border: 2px dashed;
+  border-radius: 50%;
+  padding: 20px;
+  z-index: 2;
+  top: 300px;
+  left: 80%;
+  color: grey;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  box-shadow: 3px 2px 2px rgba(117, 117, 117, 0.558);
+}
+
+#down-btn img {
+  width: 50px;
+}
+
+#down-btn:hover {
+  transform: scale(0.9);
+  opacity: 80%;
+  background: powderblue;
 }
 
 .balloons {
   flex: 1;
-  margin: 100px 50px;
+  margin: 80px 50px;
   opacity: 50%;
 }
 
-.second h1 {
-  flex: 1;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
+.second p {
+  font-size: 1.8vh;
+}
+
+.s-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.s-right h1 {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
   font-weight: lighter;
 }
-.second p {
-  font-size: 30px;
+
+.s-right p {
+  width: 60%;
 }
 
 #tag-line {
@@ -144,24 +185,137 @@ header {
   color: palevioletred;
 }
 
-.third {
+.second-extra {
   width: 100%;
-  height: 500px;
-  background-color: white;
+  background: lightgray;
+  transition: 0.7s ease-in-out;
   display: flex;
   flex-direction: row;
-  padding: 30px 50px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.third h1 {
-  flex: 1;
-  font-size: 70px;
+.second img {
+  width: 100px;
+}
+
+.sub-box {
+  width: 300px;
+  height: 300px;
+  margin: 0 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-box .top {
+  width: 100%;
+  height: 80%;
+  background: white;
+}
+
+.sub-box .bottom {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  color: white;
+}
+
+.third {
+  margin-top: 2%;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-left {
+  width: 50%;
+  background: rgb(245, 245, 245);
+  height: 100%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-box {
+  width: 60%;
+  height: 100%;
+  background: palevioletred;
+  border-radius: 5px;
+  padding: 2%;
+  box-shadow: 3px 2px 3px rgba(191, 191, 191, 0.707);
+  overflow: hidden;
+}
+
+.booking-box img {
+  width: 120px;
+  margin-top: 4%;
+}
+
+.booking-box h1 {
+  color: white;
   font-weight: lighter;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  border-top: 5px dashed white;
+  width: 80%;
+  margin-top: 15%;
+  padding-top: 20px;
 }
 
-.third p {
-  font-size: 30px;
+.booking-info {
+  width: 55%;
+  margin-left: 5%;
+}
+.booking-info p {
+  font-size: 14px;
+  margin: 0;
+}
+.booking-info h3 {
+  text-transform: capitalize;
+  color: palevioletred;
+  font-weight: lighter;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.booking-info h3:hover {
+  color: black;
+}
+
+.third-right {
+  width: 50%;
+  background: powderblue;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.love-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: white;
+  text-transform: capitalize;
+  margin-left: 3%;
+}
+
+.love-left p {
+  font-size: 14px;
+}
+.love-left h1 {
+  margin-top: 150px;
+  font-size: 2.5rem;
+}
+
+.love-right {
+  width: 40%;
+  justify-content: center;
+}
+
+.love-right img {
+  width: 100%;
 }
 
 .wedding-icon {
@@ -173,30 +327,38 @@ header {
   width: 100%;
   height: 500px;
   background-color: white;
-  padding: 50px 100px;
+
   display: flex;
   justify-content: row;
 }
 
-.fourth h1 {
-  flex: 1;
-  font-size: 70px;
+.clock {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.clock img {
+  align-content: center;
+  align-self: center;
+  width: 350px;
+}
+
+.clock-info {
+  padding: 3%;
+  width: 45%;
+}
+
+.clock-info h1 {
   font-weight: lighter;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 3.5rem;
 }
-
-.fourth p {
-  font-size: 40px;
-}
-
-.clock-icon {
-  flex: 1;
-  opacity: 70%;
+.clock-info p {
+  width: 70%;
 }
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgb(59, 59, 59);
   width: 100%;
   height: 250px;
@@ -218,10 +380,11 @@ hr {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   color: white;
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  align-self: center;
 }
+
+/*modal*/
 
 .modal {
   display: none;
@@ -235,13 +398,46 @@ hr {
 }
 
 .modal-form {
-  width: 60%;
+  width: 50%;
   height: 600px;
   background-color: white;
   margin-top: 5%;
   animation-name: modalopn;
   animation-duration: 400ms;
-  padding: 15px;
+  padding: 0px 15px;
+}
+
+#book-c {
+  display: none;
+}
+
+#book-c textarea {
+  width: 180px;
+  height: 100px;
+  border-width: 3px;
+  border-color: black;
+}
+
+.options {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.options button {
+  margin: 5px 70px;
+  margin-top: 0;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.options button:hover {
+  opacity: 80%;
 }
 
 @keyframes modalopn {
@@ -254,9 +450,16 @@ hr {
 }
 
 .close-btn {
-  font-size: 20px;
   float: right;
-  margin: 10px;
+  margin: 3px;
+}
+
+.modal-form h1 {
+  margin: 1%;
+  margin-top: 3%;
+  font-weight: normal;
+  font-size: 2.3vh;
+  color: palevioletred;
 }
 
 .close-btn:hover {
@@ -264,53 +467,108 @@ hr {
   color: powderblue;
 }
 
-.m-form {
-  border: solid;
-  border-style: dashed;
-  border-width: 3px;
+.form-containter {
+  width: 100%;
+  height: 530px;
+  background: white;
+  border: 3px dashed rgb(46, 46, 46);
+  padding: 1%;
+}
+.popup-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.p-form-left {
+  width: 60%;
+}
+.p-form-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.f-group p {
+  text-transform: capitalize;
+  font-size: 2vh;
+  margin: 2%;
+}
+
+.f-group label {
+  text-transform: capitalize;
+  font-size: 1.9vh;
+}
+
+.f-bottom-group {
+  margin-top: 4%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px 60px;
+  grid-template-columns: 1fr;
 }
 
-.modal-form h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: lighter;
-  font-size: 25px;
-  margin: 10px 0;
+.f-bottom-group input {
+  width: 55%;
+  margin: 1.5% 0;
+  height: 22px;
+  border: 2px solid rgb(56, 56, 56);
+  border-radius: 0;
+}
+.f-bottom-group label {
+  text-transform: capitalize;
+  font-size: 2vh;
 }
 
-.modal-form span {
-  color: palevioletred;
-  font-size: 40px;
+.p-form-right-top {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 10%;
+  border-radius: 2px;
 }
 
-.m-form label {
-  padding: 10px;
-  opacity: 90%;
+.p-form-right-top div {
+  text-align: right;
 }
 
-.m-form input,
-select {
-  margin: 10px;
-  padding: 3px;
-  width: 200px;
+.p-form-right-top p {
+  margin-right: 10%;
+
+  text-transform: capitalize;
+  color: rgb(39, 39, 39);
 }
 
-.sub-btn {
-  background-color: powderblue;
-  width: 10px;
-  height: 45px;
-  padding: 30px 20px;
-  border-style: dashed;
-  border-color: palevioletred;
-  color: white;
+.p-form-right-top h1 {
+  text-align: right;
+  font-size: 7vh;
 }
 
-.sub-btn:hover {
-  background-color: lightgray;
+.p-form-right-bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+  padding-bottom: 5%;
+}
+
+.modal-submit-button {
+  margin-top: 40%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(51, 51, 51);
+  border: 3px dashed white;
   cursor: pointer;
+  color: white;
+  box-shadow: rgba(117, 117, 117, 0.558);
+  transition: 0.05s ease-in-out;
 }
+
+.modal-submit-button:hover {
+  transform: scale(1.05);
+  opacity: 70%;
+}
+
+/*modal end*/
 
 .burger {
   font-size: 45px;
@@ -363,18 +621,22 @@ select {
   background-position-x: center;
 }
 
+#booking-nav {
+  display: none;
+}
+
 @media (max-width: 700px) {
   nav ul.show {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: palevioletred;
+    background-color: lightpink;
     top: 80px;
     right: -100%;
     transition: all 0.3s;
     z-index: 1000;
-    padding: 30px 0;
-    border-top: dashed black 2.5px;
+    padding: 30px 20px;
+    border: dashed white 2.5px;
     border-image-width: 4;
   }
 
@@ -383,14 +645,31 @@ select {
     text-align: center;
   }
 
-  nav li {
+  .nav li {
     display: block;
-    margin: 20px 50px;
-    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15%;
+    margin-right: 90%;
+    font-size: 25px;
+    padding-left: 0;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    transition: 0.08s ease-in;
   }
 
-  nav li:hover {
-    background-color: ivory;
+  .nav a {
+    color: white;
+  }
+
+  .nav a:hover {
+    color: darkslategrey;
+  }
+
+  .nav li:hover {
+    padding-left: 0;
+    padding-right: 200px;
+    border-bottom: 4px dashed rgb(83, 83, 83);
+    font-size: 20px;
   }
   .burger {
     margin-right: 3px;
@@ -411,6 +690,9 @@ select {
   .logo {
     width: 75%;
     height: 40%;
+  }
+  .slide-top {
+    font-size: 10px;
   }
 
   .first {
@@ -435,22 +717,204 @@ select {
     height: 300px;
     margin-bottom: 10px;
   }
+
+  .second h1,
+  #tag-line {
+    font-size: 40px;
+    margin: 0;
+  }
+
   .second p,
   ul {
-    font-size: 17px;
+    font-size: 1.2vh;
   }
 
   .third {
-    padding: 10px;
     margin-top: 10px;
-    width: 300px;
+  }
+
+  .third h1,
+  #tag-line {
+    font-size: 4vw;
+  }
+
+  .third h3 {
+    font-size: 3vw;
   }
 
   .third p {
-    font-size: 17px;
+    font-size: 1.6vh;
+  }
+  .booking-info p {
+    font-size: 1.4vh;
   }
 
   .book {
     display: none;
+  }
+
+  .fourth h1,
+  #tag-line {
+    font-size: 40px;
+  }
+
+  .fourth p {
+    font-size: 1.5vh;
+  }
+
+  .wedding-icon {
+    width: 100px;
+  }
+  .clock-icon {
+    width: 100px;
+  }
+
+  .balloons {
+    width: 10px;
+  }
+
+  #booking-nav {
+    font-size: 6rem;
+    display: block;
+    margin: 6% 0;
+    margin-right: 50%;
+    font-weight: light;
+  }
+
+  .love-left h1 {
+    margin: 0;
+    font-size: 4vw;
+  }
+
+  #down-btn {
+    top: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .head-logo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
+  .slide-top {
+    padding: 5% 8%;
+  }
+  .slide-top p {
+    font-size: 15px;
+  }
+
+  .second {
+    width: 100%;
+  }
+
+  .s-right h1 {
+    font-size: 1rem;
+  }
+
+  .s-right p {
+    font-size: 1.2vh;
+  }
+  .second-extra {
+    width: 100%;
+  }
+
+  .div-caption {
+    width: 80%;
+  }
+
+  #down-btn {
+    border-color: grey;
+    color: palevioletred;
+    top: 150px;
+    left: 40px;
+  }
+
+  .third {
+    width: 100%;
+    height: 300px;
+    background: white;
+  }
+
+  .fourth {
+    width: 100%;
+    padding: 2% 5%;
+  }
+
+  .second img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+  }
+
+  .second h1 {
+    font-size: 10px;
+    margin: 0%;
+  }
+
+  .third {
+    padding: 10px;
+    flex-direction: column;
+    height: 500%;
+  }
+
+  .third-left {
+    width: 100%;
+  }
+
+  .third-right {
+    width: 100%;
+  }
+  .third img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .third h1 {
+    font-size: 17px;
+    height: 100px;
+  }
+
+  .third p {
+    font-size: 1.2vh;
+  }
+
+  .third .tag-line {
+    font-size: 20px;
+  }
+
+  .fourth h1 {
+    font-size: 17px;
+  }
+
+  .fourth p {
+    font-size: 0.5rem;
+  }
+  .clock {
+    height: 50%;
+  }
+
+  .fourth .tag-line {
+    font-size: 20px;
+  }
+
+  .love-left h1 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .head-logo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
   }
 }

@@ -3,6 +3,9 @@ let show = document.querySelector(".show");
 
 
 
+
+show.style.right = "-100%";
+
 burger.onclick =() => {
 
     if (show.style.right === "-100%"){
