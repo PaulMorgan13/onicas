@@ -108,9 +108,11 @@
   padding: 1%;
   display: inline-flex;
   flex-direction: row;
-  width: 100%;
 }
-
+.placeholder {
+  width: 60px;
+  height: 60px;
+}
 .prev-button {
   display: flex;
   justify-content: center;
@@ -271,6 +273,8 @@
   width: 100%;
   height: 700px;
   padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 .book-fourth p {
@@ -399,8 +403,35 @@
   .event-info-box {
     height: 100%;
   }
+  .event-info-box {
+    width: 100%;
+  }
   .event-info-box p {
-    width: 70%;
-    font-size: 2.3vh;
+    width: 80%;
+    font-size: 2vh;
+  }
+  .event-promo h2 {
+    font-size: 4vh;
+  }
+
+  /*form start*/
+  #cake-form {
+    height: 400px;
+  }
+  #cake-form h1 {
+    font-size: 5vh;
+  }
+
+  #cake-form h2 {
+    font-size: 2vh;
+    font-weight: normal;
+  }
+
+  #cake-form div {
+    font-size: 3vw;
+  }
+
+  .total {
+    margin-bottom: 1%;
   }
 }
