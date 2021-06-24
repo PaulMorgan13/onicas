@@ -1,5 +1,5 @@
 let span = document.getElementsByClassName("arrow");
-let div = document.getElementsByTagName("div"); 
+let div = document.getElementsByClassName("slide-i-box"); 
 let  l = 0; 
 
 

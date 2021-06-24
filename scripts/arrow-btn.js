@@ -5,47 +5,32 @@ let hiddenMenu = document.querySelector(".second-extra");
 
 
 hiddenMenu.style.height = "0px"; 
-           
 
-arrowBtn.addEventListener("mouseover", e  =>{ 
-    arrowBtn.style.transform = "scale(0.9)"
-
-    
+arrowBtn.style.transform = "rotate(0deg)";   
 
 
-
-
-}) 
-
-
-arrowBtn.addEventListener("mouseout", e  =>{ 
-    arrowBtn.style.transform = "scale(1)"
-
-    
-
-
-
-
-})
 
 
 arrowBtn.onclick = () =>{ 
 
+    arrowBtn.style.transform = "rotate(180deg)";
+
 
         if ( hiddenMenu.style.height === "0px") {
-            arrowBtn.style.transform  = "rotate(180deg)"
-            hiddenMenu.style.height = "350px"; 
-
-
+            hiddenMenu.style.height = "350px";   
+            
         }
 
         else {
         
-            hiddenMenu.style.height = "0px"; 
-            arrowBtn.style.transform  = "rotate(0deg)"   
+            hiddenMenu.style.height = "0px";   
+            arrowBtn.style.transform = "rotate(0deg)";
+             
              
         }
 } 
+
+
 
 
 
