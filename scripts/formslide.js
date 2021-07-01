@@ -1,8 +1,13 @@
 const steps = Array.from( document.querySelectorAll(".step")); 
 
-const nextBtn = document.querySelectorAll("form .next-button"); 
+const nextBtn = document.querySelectorAll("form .next-button");   
 
-const prevBtn = document.querySelectorAll("form .prev-button");  
+const goBtn = document.querySelectorAll("form .go-button"); 
+
+
+const prevBtn = document.querySelectorAll("form .prev-button");    
+
+
 
 const form = document.querySelector("#cake-form");
 
@@ -15,6 +20,22 @@ nextBtn.forEach(button => {
 
 })   
  
+
+goBtn.forEach(button => { 
+    let clickCount=0;
+    button.addEventListener("click", (e) =>{  
+            clickCount++ 
+            console.log(clickCount)
+            if (clickCount >=2 ){    
+                console.log(clickCount)
+                changeStep("next");  
+                clickCount=0;
+        }  
+
+    })
+
+})   
+
 prevBtn.forEach(button => {
     button.addEventListener("click", (e) =>{  
         changeStep("prev");

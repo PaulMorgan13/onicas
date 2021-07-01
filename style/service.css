@@ -284,4 +284,15 @@
   .s-bottom h1 {
     text-align: center;
   }
+
+  .order-now-box {
+    padding: 2% 3%;
+  }
+  .order-now-box h1 {
+    font-size: 10vh;
+  }
+
+  .order-now-box:hover h1 {
+    font-size: 11vh;
+  }
 }

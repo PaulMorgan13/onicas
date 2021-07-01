@@ -74,6 +74,26 @@
   cursor: pointer;
   border-color: #4e4e4e;
 }
+.go-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  left: 65%;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  background: powderblue;
+  color: aliceblue;
+  font-size: 20px;
+  border: dashed 2px;
+  transition: ease-in-out 0.05s;
+  box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.336);
+  cursor: pointer;
+  border-color: #4e4e4e;
+}
 
 .submit-button {
   left: 80%;

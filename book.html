@@ -25,7 +25,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="contact.html">Contact</a></li> 
-                    <li id="booking-nav" ><a href="#">Book</a></li> 
+                    <li id="booking-nav" ><a href="/book.html">Book</a></li> 
 
                     
                     
@@ -72,20 +72,20 @@
         <div class="cake-order">
                 
 
-                <form action="" id="cake-form"> 
+                <form action="" id="cake-form" name="c-form"> 
                     <h1>Cakes</h1>
                         <div class="step step-one  active">  
                             
                                 <h2>Size</h2>  
 
                                 <div class=" size">
-                                <input type="radio" id="five-inch" name="size" value="5">  
+                                <input  id="cakeSone" type="radio" id="five-inch" name="size" value="7">  
                                 <label for="five-inch">5"</label>  
 
-                                <input type="radio" id="eight-inch" name="size" value="8">  
+                                <input id="cakeStwo" type="radio" id="eight-inch" name="size" value="10">  
                                 <label for="eight-inch">8"</label>  
 
-                                <input type="radio" id="ten-inch" name="size" value="10">  
+                                <input id="cakeSthree"  type="radio" id="ten-inch" name="size" value="20">  
                                 <label for="ten-inch">10"</label>     
 
                                 </div>
@@ -108,14 +108,14 @@
 
                                 <h2>Filling</h2>    
                                 <div class="filling">
-                                <input type="radio" id="vanilla" name="filling" value="vanilla">  
+                                <input type="radio" id="f-vanilla" name="filling" value="2">  
                                 <label for="vanilla">Vanilla</label>  
 
-                                <input type="radio" id="chocolate" name="filling" value="chocolate">  
-                                <label for="eight-inch">Chocolate</label>  
+                                <input type="radio" id="f-chocolate" name="filling" value="2">  
+                                <label for="eight-inch">Moose</label>  
 
-                                <input type="radio" id="fun-fetty" name="filling" value="fun-fetty">  
-                                <label for="fun-fetty">Fun-Fetty</label>
+                                <input type="radio" id="f-pineapple" name="filling" value="3">  
+                                <label for="fun-fetty">Pineapple</label>
                                 </div>
 
                                 <h2>Icing</h2>    
@@ -130,13 +130,13 @@
 
                                 <h2>Toppers</h2>    
                                 <div class="topper">
-                                <input type="radio" id="none" name="topper" value="none">  
+                                <input type="radio" id="t-none" name="topper" value="0">  
                                 <label for="">none</label>  
 
-                                <input type="radio" id="fruit" name="topper" value="fruit">  
+                                <input type="radio" id="t-fruit" name="topper" value="5">  
                                 <label for="eight-inch">fruit</label>   
 
-                                <input type="radio" id="chocolate" name="topper" value="cookies">  
+                                <input type="radio" id="t-cookies" name="topper" value="7">  
                                 <label for="eight-inch">cookies</label>  
 
                                 </div>     
@@ -202,7 +202,8 @@
                            
                             <div class="button-box" >
                                 <button class="prev-button"  type="button"><img src="/images/prev.png" alt="" width="20px"></button>
-                                <button class="next-button"  type="button"><img src="/images/next.png" alt="" width="25px"></button>
+                                <button class="next-button"  type="button"><img src="/images/next.png" alt="" width="25px"></button> 
+
                             </div>
                         
                         </div>
@@ -228,7 +229,10 @@
             
                         <div class="button-box">
                             <button class="prev-button"  type="button"><img src="/images/prev.png" alt="" width="20px"></button>
-                            <button class="next-button"  type="button"><img src="/images/next.png" alt="" width="25px"></button>
+                            <button class="go-button"  type="button">go</button>
+                            
+                            
+
                         </div>
                     
 
@@ -530,7 +534,7 @@
     </div>
     </div>   
 
-
+    <script src="/scripts/formCounter.js"></script>
     <script src="/scripts/formslide.js"></script>
     <script src="/scripts/booktoggle.js"></script>    
     <script src="/scripts/nav-slide.js"></script>

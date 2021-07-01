@@ -217,13 +217,22 @@ header {
   width: 100%;
   height: 80%;
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.295);
 }
 
 .sub-box .bottom {
   width: 100%;
   height: 20%;
   text-align: center;
-  color: white;
+  color: rgb(102, 102, 102);
+}
+
+.sub-box img:hover {
+  filter: saturate(90%);
 }
 
 .third {
@@ -392,6 +401,11 @@ hr {
   color: white;
   display: flex;
   align-self: center;
+}
+
+footer p {
+  text-align: center;
+  color: white;
 }
 
 /*modal*/
@@ -855,19 +869,23 @@ hr {
     padding: 2% 5%;
   }
 
-  .second img {
+  /*.second img {
     width: 50px;
     height: 50px;
     margin: 10px 10px;
-  }
+  }  */
 
+  .balloons {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
   .second h1 {
     font-size: 10px;
     margin: 0%;
   }
 
   .third {
-    padding: 10px;
     flex-direction: column;
     height: 500%;
   }
@@ -914,6 +932,34 @@ hr {
 
   .love-left h1 {
     margin: 0;
+  }
+  .second-extra {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 5%;
+  }
+  .sub-box {
+    align-items: left;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 5%;
+  }
+
+  .sub-box .top {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sub-box .bottom {
+    padding-left: 10%;
+  }
+
+  .sub-box p {
+    margin-top: 80%;
+    text-align: left;
   }
 }
 

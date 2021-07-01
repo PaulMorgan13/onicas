@@ -17,14 +17,18 @@ arrowBtn.onclick = () =>{
 
 
         if ( hiddenMenu.style.height === "0px") {
-            hiddenMenu.style.height = "350px";   
+            hiddenMenu.style.height = "400px"; 
+            hiddenMenu.style.padding = "5%"  
+
+              
             
         }
 
         else {
         
             hiddenMenu.style.height = "0px";   
-            arrowBtn.style.transform = "rotate(0deg)";
+            arrowBtn.style.transform = "rotate(0deg)"; 
+            hiddenMenu.style.padding = 0
              
              
         }

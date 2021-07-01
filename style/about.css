@@ -28,8 +28,15 @@
   background-color: white;
   text-align: center;
   padding: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
+  font-size: 2vh;
   display: flex;
+}
+
+.about-second h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
 }
 
 .orgins-box {
@@ -47,6 +54,7 @@
 }
 
 .orgins-box p {
+  font-size: 2vh;
   column-count: 2;
   text-align: left;
   width: 80%;
@@ -62,7 +70,8 @@
 }
 
 .ceo-box .bottom {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .ceo-box h2 {
   margin-bottom: 3%;
@@ -74,16 +83,23 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: lightcoral;
+  background-color: palevioletred;
   border-width: 4px;
   border-style: dashed;
   margin-right: 5%;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.315);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.frame img {
+  border-radius: 50%;
+  border: 4px solid white;
 }
 
 .ceo-box p {
-  margin-top: 40px;
-  font-size: 13px;
+  font-size: 2vh;
   text-align: left;
   padding: 10px;
   width: 300px;
@@ -220,6 +236,22 @@ span {
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-second p {
+    font-size: 1.2vw;
+  }
+}
+
 @media (max-width: 600px) {
   .about-first {
     width: 100%;
@@ -234,7 +266,7 @@ span {
     width: 100%;
     height: 1000px;
     flex-direction: column;
-    padding: 3% 5%;
+    padding: 8% 5%;
   }
 
   .orgins-box {
@@ -247,8 +279,14 @@ span {
     font-size: 1.6vh;
     column-count: 1;
   }
-  .about-second h1 {
-    font-size: 25px;
+
+  .ceo-box {
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .about-second h1,
+  h2 {
+    font-size: 30px;
     font-weight: lighter;
   }
 
@@ -300,8 +338,7 @@ span {
     padding: 0;
     margin: 0;
     height: 500px;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 
   .abt-trd-left {

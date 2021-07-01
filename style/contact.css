@@ -43,18 +43,18 @@
 .c-form input {
   border: 0;
   border-bottom: 2px black solid;
-  padding: 10px 5px;
+  padding: 5px;
   margin-bottom: 1rem;
-  width: 60%;
+  width: 50%;
   transition: ease-in 0.03s;
 }
 
 .c-form input:focus {
-  border-bottom: 5px solid palevioletred;
+  border-bottom: 2px solid palevioletred;
 }
 
 .c-form label {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 #t-area {
   width: 60%;
@@ -62,16 +62,33 @@
   background: rgb(245, 245, 245);
   border: none;
   border-radius: 1%;
+  margin-bottom: 5px;
 }
-.contact-first h1 {
+
+.sumbit-button {
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+  background: palevioletred;
+  color: white;
+  border: none;
+  transition: 0.07s ease-in;
+}
+
+.sumbit-button:hover {
+  background: slategray;
+}
+
+#sub .contact-first h1 {
   opacity: 70%;
   padding: 0;
 }
 
 .contact-second h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 2vw;
   margin: 10px 0;
+  font-weight: lighter;
 }
 .contact-first p {
   font-size: 25px;
