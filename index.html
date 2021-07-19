@@ -186,9 +186,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae hic iure! Assumenda hic, est molestias quia accusamus tempora provident laudantium corporis, quod, expedita omnis magnam quaerat doloribus nobis sed!
             </p>  
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae hic iure! Assumenda hic, est molestias quia accusamus tempora provident laudantium corporis, quod, expedita omnis magnam quaerat doloribus nobis sed!
-            </p> 
+  
         
             </div>
 
@@ -336,7 +334,8 @@
               <span id="close-btn" class="close-btn"  style="font-size: 25px;">&times</span>    
                 
 
-                <h1 >Cake Booking</h1> 
+              <h1 id="m-heading"><a href="/book.html">Cake Booking</a></h1>
+ 
 
                 <div class="form-containter">
 
@@ -347,50 +346,50 @@
 
                             <div class="f-group">
                                 <p>size</p> 
-                                <input type="radio" name="size" value="5">  
+                                <input id="cakeMone" type="radio" name="size" value="7">  
                                 <label for="5">5"</label>
-                                <input type="radio" name="size" value="7">  
+                                <input id="cakeMtwo" type="radio" name="size" value="10">  
                                 <label for="5">7"</label>  
-                                <input type="radio" name="size" value="10">  
+                                <input  id="cakeMthree" type="radio" name="size" value="20">  
                                 <label for="5">10"</label>    
                             </div>                   
                             
                             <div class="f-group">
                                 <p>cake flavor</p> 
-                                <input type="radio" name="flavor" value="5">  
+                                <input type="radio"  id="m-vanilla" name="flavor" value="5">  
                                 <label for="5">vanilla</label>
-                                <input type="radio" name="flavor" value="7">  
+                                <input type="radio"  id="m-chocolate" name="flavor" value="7">  
                                 <label for="5">Chocolate</label>  
-                                <input type="radio" name="flavor" value="10">  
+                                <input type="radio"  id="m-redVel" name="flavor" value="10">  
                                 <label for="5">red valvet</label>    
                             </div>  
 
                             <div class="f-group">
                                 <p>filling</p> 
-                                <input type="radio" name="filling" value="vanilla">  
-                                <label for="vanlla">vanilla</label>
-                                <input type="radio" name="filling" value="Strawberry">  
-                                <label for="Strawberry">Strawberry</label>  
-                                <input type="radio" name="filling" value="oreo">  
+                                <input id="m-filling" type="radio" name="filling" value="vanilla">  
+                                <label id="m-filling" for="vanlla">vanilla</label>
+                                <input id="m-filling" type="radio" name="filling" value="Strawberry">  
+                                <label id="m-filling" for="Strawberry">Strawberry</label>  
+                                <input id="m-filling" type="radio" name="filling" value="oreo">  
                                 <label for="oreo">oreo </label>    
                             </div>  
 
                             <div class="f-group">
                                 <p>icing</p> 
-                                <input type="radio" name="size" value="5">  
+                                <input type="radio" name="icing" value="5">  
                                 <label for="5">vanilla"</label>
-                                <input type="radio" name="size" value="7">  
+                                <input type="radio" name="icing" value="7">  
                                 <label for="5">chocolate</label>  
                                 
                             </div>              
                             
                             <div class="f-group">
                                 <p>toppings</p> 
-                                <input type="radio" name="size" value="5">  
+                                <input id="t-m-fruit" type="radio" name="topping" value="10">  
                                 <label for="5">fruit</label>
-                                <input type="radio" name="size" value="7">  
+                                <input id="t-m-cookies" type="radio" name="topping" value="12">  
                                 <label for="5">cookies</label>  
-                                <input type="radio" name="size" value="10">  
+                                <input id="t-m-none" type="radio" name="topping" value="0">  
                                 <label for="5">none</label>    
                             </div>     
                              
@@ -436,7 +435,7 @@
                                         <div>
                                             <p>your total</p> 
   
-                                            <h1>
+                                            <h1 id="m-total">
                                                 $000.00
                                             </h1>
                                         </div>
@@ -445,6 +444,8 @@
                                     
                                         <div class="p-form-right-bottom"> 
 
+
+                                            <button class="calc-btn" type="button">Calc</button>
                                             <button type="submit" class="modal-submit-button">submit</button>
 
                                         </div>
@@ -497,6 +498,8 @@
 
         </div>   
 
+
+    <script src="scripts/modalform.js"></script>
     <script src="scripts/arrow-btn.js"></script>
     <script src="scripts/topSlide.js"></script>
     <script src="/scripts/nav-slide.js"></script>

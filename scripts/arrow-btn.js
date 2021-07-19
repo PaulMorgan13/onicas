@@ -2,7 +2,7 @@ let arrowBtn = document.getElementById("down-btn");
 let hiddenMenu = document.querySelector(".second-extra");  
 
 
-
+hiddenMenu.style.padding = "0"; 
 
 hiddenMenu.style.height = "0px"; 
 

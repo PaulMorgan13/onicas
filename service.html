@@ -203,212 +203,175 @@
 
 </footer>
     
-    <div id="modal" class="modal"> 
-        <div class="modal-form"> 
+<div id="modal" class="modal">
+    <div class="modal-form"> 
 
-            <span id="close-btn" class="close-btn"  style="font-size: 25px;">&times</span>    
-              
+      <span id="close-btn" class="close-btn"  style="font-size: 25px;">&times</span>    
+        
 
-              <h1 >Cake Booking</h1> 
+      <h1 id="m-heading"><a href="/book.html">Cake Booking</a></h1>
 
-              <div class="form-containter">
 
-                      <form action="" class="popup-form"> 
-                         
-                          <div class="p-form-left">
+        <div class="form-containter">
+
+                <form action="" class="popup-form"> 
+                   
+                    <div class="p-form-left">
+                      
+
+                    <div class="f-group">
+                        <p>size</p> 
+                        <input id="cakeMone" type="radio" name="size" value="7">  
+                        <label for="5">5"</label>
+                        <input id="cakeMtwo" type="radio" name="size" value="10">  
+                        <label for="5">7"</label>  
+                        <input  id="cakeMthree" type="radio" name="size" value="20">  
+                        <label for="5">10"</label>    
+                    </div>                   
+                    
+                    <div class="f-group">
+                        <p>cake flavor</p> 
+                        <input type="radio"  id="m-vanilla" name="flavor" value="5">  
+                        <label for="5">vanilla</label>
+                        <input type="radio"  id="m-chocolate" name="flavor" value="7">  
+                        <label for="5">Chocolate</label>  
+                        <input type="radio"  id="m-redVel" name="flavor" value="10">  
+                        <label for="5">red valvet</label>    
+                    </div>  
+
+                    <div class="f-group">
+                        <p>filling</p> 
+                        <input id="m-filling" type="radio" name="filling" value="vanilla">  
+                        <label id="m-filling" for="vanlla">vanilla</label>
+                        <input id="m-filling" type="radio" name="filling" value="Strawberry">  
+                        <label id="m-filling" for="Strawberry">Strawberry</label>  
+                        <input id="m-filling" type="radio" name="filling" value="oreo">  
+                        <label for="oreo">oreo </label>    
+                    </div>  
+
+                    <div class="f-group">
+                        <p>icing</p> 
+                        <input type="radio" name="icing" value="5">  
+                        <label for="5">vanilla"</label>
+                        <input type="radio" name="icing" value="7">  
+                        <label for="5">chocolate</label>  
+                        
+                    </div>              
+                    
+                    <div class="f-group">
+                        <p>toppings</p> 
+                        <input id="t-m-fruit" type="radio" name="topping" value="10">  
+                        <label for="5">fruit</label>
+                        <input id="t-m-cookies" type="radio" name="topping" value="12">  
+                        <label for="5">cookies</label>  
+                        <input id="t-m-none" type="radio" name="topping" value="0">  
+                        <label for="5">none</label>    
+                    </div>     
+                     
+
+                
+                <div class="f-bottom-group">
+                    <label for="color"> color (main)</label> 
+                    <input type="text">   
+
+                    <label for="color"> color (secondary)</label> 
+                    <input type="text"> 
+
+                    <label for="color"> writing</label> 
+                    <input type="text">   
+
+                    <label for="color"> theme</label> 
+                    <input type="text">   
+                </div>
+
+                    
+
+
+                    
+                    
+                    
+
+                                   
+                                          
+                                       
+                        
+                        
+
+
+
+
+
+                    </div> 
+
+                    <div class="p-form-right">   
+                           
+                            <div class="p-form-right-top">    
+
+                                <div>
+                                    <p>your total</p> 
+
+                                    <h1 id="m-total">
+                                        $000.00
+                                    </h1>
+                                </div>
+
+                            </div> 
+                            
+                                <div class="p-form-right-bottom"> 
+
+
+                                    <button class="calc-btn" type="button">Calc</button>
+                                    <button type="submit" class="modal-submit-button">submit</button>
+
+                                </div>
                             
 
-                          <div class="f-group">
-                              <p>size</p> 
-                              <input type="radio" name="size" value="5">  
-                              <label for="5">5"</label>
-                              <input type="radio" name="size" value="7">  
-                              <label for="5">7"</label>  
-                              <input type="radio" name="size" value="10">  
-                              <label for="5">10"</label>    
-                          </div>                   
-                          
-                          <div class="f-group">
-                              <p>cake flavor</p> 
-                              <input type="radio" name="flavor" value="5">  
-                              <label for="5">vanilla</label>
-                              <input type="radio" name="flavor" value="7">  
-                              <label for="5">Chocolate</label>  
-                              <input type="radio" name="flavor" value="10">  
-                              <label for="5">red valvet</label>    
-                          </div>  
 
-                          <div class="f-group">
-                              <p>filling</p> 
-                              <input type="radio" name="filling" value="vanilla">  
-                              <label for="vanlla">vanilla</label>
-                              <input type="radio" name="filling" value="Strawberry">  
-                              <label for="Strawberry">Strawberry</label>  
-                              <input type="radio" name="filling" value="oreo">  
-                              <label for="oreo">oreo </label>    
-                          </div>  
 
-                          <div class="f-group">
-                              <p>icing</p> 
-                              <input type="radio" name="size" value="5">  
-                              <label for="5">vanilla"</label>
-                              <input type="radio" name="size" value="7">  
-                              <label for="5">chocolate</label>  
-                              
-                          </div>              
-                          
-                          <div class="f-group">
-                              <p>toppings</p> 
-                              <input type="radio" name="size" value="5">  
-                              <label for="5">fruit</label>
-                              <input type="radio" name="size" value="7">  
-                              <label for="5">cookies</label>  
-                              <input type="radio" name="size" value="10">  
-                              <label for="5">none</label>    
-                          </div>     
-                           
 
-                      
-                      <div class="f-bottom-group">
-                          <label for="color"> color (main)</label> 
-                          <input type="text">   
 
-                          <label for="color"> color (secondary)</label> 
-                          <input type="text"> 
 
-                          <label for="color"> writing</label> 
-                          <input type="text">   
+                        
+                    </div>
 
-                          <label for="color"> theme</label> 
-                          <input type="text">   
-                      </div>
 
-                          
 
 
-                          
-                          
-                          
 
-                                         
-                                                
-                                             
-                              
-                              
 
 
 
 
 
-                          </div> 
+                </form>
 
-                          <div class="p-form-right">   
-                                 
-                                  <div class="p-form-right-top">    
 
-                                      <div>
-                                          <p>your total</p> 
 
-                                          <h1>
-                                              $000.00
-                                          </h1>
-                                      </div>
-                                  </div> 
-                                  
-                                      <div class="p-form-right-bottom"> 
 
-                                          <button type="submit" class="modal-submit-button">submit</button>
 
-                                      </div>
-                                  
+        </div>
 
 
 
 
 
 
-                              
-                          </div>
 
 
 
 
 
 
+        </form> 
+        </div>  
 
 
+    </div>
 
 
-                      </form>
 
 
-
-
-
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-              </form> 
-              </div>  
-
-
-              <div class="book-c" id="book-c"> 
-
-                  <h1><span>Fill</span> in to order "Cake" </h1>
-                  <form  class="m-form" action="/phpfolder/eventOrder.php" method="POST"> 
-                  
-                      <label for="">Size</label> 
-                      <select name="Event" id="event-type">
-                          <option value="wedding">5"</option>
-                          <option value="Birthday">7"</option>
-                          <option value="Other">10"</option>
-                        </select>
-
-                       <label for="">Flavor</label> 
-                      <select name="Event" id="event-type">
-                          <option value="wedding">Vanilla</option>
-                          <option value="Birthday">Chocolate</option>
-                          <option value="Other">Red Velvet</option>
-                          <option value="Other">Black</option>
-                        </select>
-
-                      
-                      <label for="">Inscription</label> 
-                      <input type="text"> 
-                      
-                      <label for="">Cake color</label> 
-                      <input type="text">   
-
-                      <label for="">Filling</label> 
-                      <input type="text">   
-
-                      
-                      <label for="">Deco</label> 
-                      <input type="text">   
-
-                      <label for="">addional notes</label> 
-                      <textarea name="" id="" cols="5" rows="5"  id="text-box"></textarea>
-
-                      <input class="sub-btn" type="submit" value="Submit">
-
-              </form> 
-              </div>
-
-          </div>
-
-        
-</div>
-
+</div> 
     
 </body>  
 

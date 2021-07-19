@@ -431,6 +431,17 @@ footer p {
   padding: 0px 15px;
 }
 
+#m-heading a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.modal-form #m-heading:hover {
+  opacity: 70%;
+  cursor: pointer;
+  content: " - Remember this";
+}
+
 #book-c {
   display: none;
 }
@@ -568,10 +579,12 @@ footer p {
 }
 
 .p-form-right-bottom {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15%;
-  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  padding-left: 75px;
 }
 
 .modal-submit-button {
@@ -590,6 +603,27 @@ footer p {
 .modal-submit-button:hover {
   transform: scale(1.05);
   opacity: 70%;
+}
+
+.calc-btn {
+  padding-left: 10%;
+  margin-left: 15%;
+  margin: 0;
+  margin-top: 70%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: palevioletred;
+  border: 3px dashed white;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(117, 117, 117, 0.558);
+  transition: 0.05s ease-in-out;
+}
+
+.calc-btn:hover {
+  transform: scale(1.05);
+  opacity: 90%;
 }
 
 /*modal end*/
@@ -936,8 +970,6 @@ footer p {
   .second-extra {
     flex-direction: column;
     align-items: flex-start;
-
-    padding: 5%;
   }
   .sub-box {
     align-items: left;

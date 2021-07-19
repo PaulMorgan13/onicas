@@ -1,17 +1,17 @@
-const sizeOne = document.getElementById("cakeSone"); 
-const sizeTwo = document.getElementById("cakeStwo");
-const sizeThree = document.getElementById("cakeSthree");  
-const calc = document.querySelector(".go-button")
-const yourPrice = document.querySelectorAll("#total")
+
+
+const sizeOne = document.getElementById("cakeMone"); 
+const sizeTwo = document.getElementById("cakeMtwo");
+const sizeThree = document.getElementById("cakeMthree");  
+const calc = document.querySelector(".calc-btn")
+const yourPrice = document.querySelectorAll("#m-total")
 
 /*tooppers */
-const topperOne  = document.getElementById("t-none");  
-const topperTwo  = document.getElementById("t-fruit");  
-const topperThree  = document.getElementById("t-cookies");   
+const topperOne  = document.getElementById("t-m-none");  
+const topperTwo  = document.getElementById("t-m-fruit");  
+const topperThree  = document.getElementById("t-m-cookies");   
   
 const fill = document.querySelector(".filling")  
-
-
 
 
 
@@ -67,10 +67,10 @@ calc.addEventListener("click", ()=>{
 
     
     t = a+b ;
-    
-    var priceEnd = ".99"
+
+
     for (i=0; i<yourPrice.length; i++){
-        yourPrice[i].innerHTML = "$" + t + priceEnd; 
+        yourPrice[i].innerHTML = "$" + t ; 
 
     }
 
